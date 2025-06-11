@@ -1,7 +1,7 @@
 terraform {
     required_providers {
         aws = {
-            source = "hashicrop/aws"
+            source = "hashicorp/aws"
             version = "5.98.0"
         }
     }
@@ -11,6 +11,7 @@ terraform {
         key    = "remote-state-demo"
         region = "us-east-1"
         encrypt = true
+        #dynamodb_table = "84s-remote-state"
         use_lockfile = true
     }
 }

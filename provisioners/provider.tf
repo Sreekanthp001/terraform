@@ -1,12 +1,12 @@
 terraform {
     required_providers {
         aws = {
-            source = "hashicrop/aws"
+            source = "hashicorp/aws"
             version = "5.98.0"
         }
     }
     backend "s3" {
-        bucket = "84s-remote-state"
+        bucket = "84s-remote-state0"
         key    = "provisioner"
         region = "us-east-1"
         encrypt        = true
